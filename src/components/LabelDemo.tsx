@@ -1,6 +1,8 @@
+// https://www.radix-ui.com/primitives/docs/components/label
+
 import { Label } from "radix-ui";
 
-const DemoLabel = () => {
+const LabelDemo = () => {
   return (
     <>
       <Label.Root htmlFor="firstName" className="text-orange-600">
@@ -10,10 +12,10 @@ const DemoLabel = () => {
         name="firstName"
         type="text"
         id="firstName"
-        className="border-gray-600 border-1 rounded-b-lg"
+        className="border-gray-600 border-3 rounded-md"
       />
     </>
   );
 };
 
-export default DemoLabel;
+export default LabelDemo;

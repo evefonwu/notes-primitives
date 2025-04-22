@@ -1,14 +1,32 @@
 import "./App.css";
-import DemoLabel from "./components/DemoLabel";
-import DemoPopover from "./components/DemoPopover";
+import DialogDemo from "./components/DialogDemo";
+import LabelDemo from "./components/LabelDemo";
+import PopoverDemo from "./components/PopoverDemo";
+import TabsDemo from "./components/TabDemo";
+import ToastDemoSimple from "./components/ToastDemoSimple";
 
 function App() {
   return (
-    <div className="flex flex-col gap-10 px-10">
-      <div className="flex flex-col gap-2 bg-amber-200 py-3">
-        <DemoLabel />
+    <div className="flex flex-col gap-10 px-10 py-10">
+      <div className="flex">
+        <TabsDemo />
       </div>
-      <DemoPopover />
+
+      <div className="flex">
+        <ToastDemoSimple />
+      </div>
+
+      <div className="flex">
+        <DialogDemo />
+      </div>
+
+      <div className="flex flex-col gap-1 py-3 w-60">
+        <LabelDemo />
+      </div>
+
+      <div className="flex">
+        <PopoverDemo />
+      </div>
     </div>
   );
 }
